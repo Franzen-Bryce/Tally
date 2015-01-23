@@ -1,0 +1,349 @@
+@font-face
+{
+font-family: p1;
+src: url(/fonts/open-sans/OpenSans-Light.ttf);
+}
+
+@font-face{
+    font-family: p1b;
+    src: url(/fonts/open-sans/OpenSans-Bold.ttf)
+}
+
+body{
+    margin: 0px;
+    background-color: #1b1a1a;
+}
+
+#header {
+    background: rgb(65,196,0); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(65,196,0,1) 0%, rgba(45,114,0,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(65,196,0,1)), color-stop(100%,rgba(45,114,0,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(65,196,0,1) 0%,rgba(45,114,0,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(65,196,0,1) 0%,rgba(45,114,0,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(65,196,0,1) 0%,rgba(45,114,0,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(65,196,0,1) 0%,rgba(45,114,0,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41c400', endColorstr='#2d7200',GradientType=0 ); /* IE6-9 */
+    width: -moz-calc(100% - 40px);
+    height: 30px;
+    font-family: p1, sans-serif;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 40px;
+}
+
+.menuImg {
+    width: 20px;
+    margin-right: 10px;
+    padding-top: 5px;
+}
+
+#menu {
+    position: absolute;
+    z-index: 0;
+}
+
+main {
+    margin: 30px auto 30px auto;
+}
+
+main form {
+    width: 250px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    font-family: p1;
+    color: #ffffff;
+}
+
+.fineprint {
+    clear: both;
+    display: block;
+    font-size: 10pt;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    text-decoration: underline;
+    color: #ffffff;
+    
+}
+
+h1 {
+    font-family: p1;
+    color: #ffffff;
+    font-size: 16pt;
+}
+
+h2 {
+    font-family: p1b;
+    color: #ffffff;
+    font-size: 14pt;
+}
+
+/*Counter Screen Styling*/
+div.count{
+    min-height: -moz-calc(100% - 115px);
+    margin-bottom: 115px;
+}
+
+h2.count {
+    margin: 5px 20px 5px 20px;
+    font-family: p1;
+    position: relative;
+    z-index: -1;
+}
+
+#personalCount {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 62px;
+    text-align: right;
+    padding-right: 5px;
+    border-radius: 4px;
+    border: 2px solid black;
+    height: 70px;
+    width: 85%;
+    background: -webkit-linear-gradient(#BFBFBF, #58A831); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#BFBFBF, #58A831); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#BFBFBF, #58A831); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#BFBFBF, #58A831); /* Standard syntax */
+    position: relative;
+    z-index: 0;
+}
+
+#totalCount {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 45px;
+    text-align: right;
+    padding-right: 5px;
+    border-radius: 4px;
+    border: 2px solid black;
+    height: 50px;
+    width: 85%;
+    background: -webkit-linear-gradient(#BFBFBF, #798075); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#BFBFBF, #798075); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#BFBFBF, #798075); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#BFBFBF, #798075); /* Standard syntax */
+    position: relative;
+    z-index: 0;
+}
+
+#countButtons {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    z-index: 0;
+}
+
+#minus {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    z-index: 2;
+    float:left;
+    color: #ffffff;
+    font-size:300%;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    width:50%;
+    max-width: 50%;
+    height:115px;
+    cursor:pointer;
+    border:2px solid black;
+	border-radius: 4px;
+	transition: all .1s linear;
+	box-shadow: 0 px 5px 0px black;
+    background: -webkit-linear-gradient(#696969, #121212); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#696969, #121212); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#696969, #121212); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#696969, #121212); /* Standard syntax */
+}
+
+#minus:active {
+    box-shadow: 0px 2px 0px black;
+	transform: translateY(3px);
+}
+
+#plus {
+    position: absolute;
+        right: 0px;
+        bottom:0px;
+    z-index: 2;
+    float:right;
+    color: #ffffff;
+    font-size:300%;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    width:50%;
+    max-width: 50%;
+    height:115px;
+    cursor:pointer;
+    border:2px solid black;
+	border-radius: 4px;
+	transition: all .1s linear;
+	box-shadow: 0 px 5px 0px black;
+    background: -webkit-linear-gradient(#696969, #121212); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#696969, #121212); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#696969, #121212); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#696969, #121212); /* Standard syntax */
+}
+
+#plus:active {
+box-shadow: 0px 2px 0px black;
+transform: translateY(3px);
+}
+
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, p1;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+/* proposed changes (allows click anywhere to close-- more mobile friendly) */
+
+.modalDialog > div {
+	width: 250px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+        max-height: 400px;
+}
+
+.modalDialog h2 {
+    color: #000000;
+}
+
+.modalDialog p {
+    color: #000000;
+}
+
+.close {
+	background: #BFBFBF;
+	position: absolute;
+	right: 10px;
+	text-align: center;
+	top: 10px;
+	width: 100px;
+        height: 23px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+        border: 2px solid #000000;
+        padding-top: 5px;
+        color: #000000;
+}
+
+/*.close {
+	background: none;
+	position: fixed;
+        z-index: -1;
+	right: -12px;
+	text-align: center;
+	top: 0px;
+	width: 200%;
+        height: 300%;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+}*/
+
+#eventList{
+    list-style: none;
+    line-height: 40px;
+}
+
+#eventChoice {
+    text-align: center;
+    max-height: 180px;
+    overflow-y: scroll;
+    width: 290px;
+    margin-left: -20px;
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 19%, rgba(0,0,0,0) 77%, rgba(0,0,0,0.61) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(19%,rgba(0,0,0,0)), color-stop(77%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.61))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 19%,rgba(0,0,0,0) 77%,rgba(0,0,0,0.61) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 19%,rgba(0,0,0,0) 77%,rgba(0,0,0,0.61) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 19%,rgba(0,0,0,0) 77%,rgba(0,0,0,0.61) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 19%,rgba(0,0,0,0) 77%,rgba(0,0,0,0.61) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#9c000000',GradientType=0 ); /* IE6-9 */
+}
+
+ul, menu, dir {
+    -webkit-padding-start: 0px;
+}
+
+#eventList a{
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
+    
+}
+
+#eventList li{
+    border-bottom: 1px solid black;
+}
+.button {
+   border-top: 1px solid #057345;
+   background: #109148;
+   background: -webkit-gradient(linear, left top, left bottom, from(#37e843), to(#109148));
+   background: -webkit-linear-gradient(top, #37e843, #109148);
+   background: -moz-linear-gradient(top, #37e843, #109148);
+   background: -ms-linear-gradient(top, #37e843, #109148);
+   background: -o-linear-gradient(top, #37e843, #109148);
+   padding: 10px 20px;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   border-radius: 8px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 14px;
+   font-family: Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   display: block;
+   margin: 10px auto;
+   cursor: pointer;
+   }
+.button:hover {
+   border-top-color: #00823b;
+   background: #00823b;
+   color: #ccc;
+   }
+.button:active {
+   border-top-color: #039600;
+   background: #039600;
+   }
+
+

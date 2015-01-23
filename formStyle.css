@@ -1,0 +1,87 @@
+form {
+    display: inline-block;
+}
+label{
+    font-family: p1;
+    color: #ffffff;
+    clear: left;
+    float: left;
+    margin-top: 10px;
+}
+
+input {
+    clear: left;
+    float: left;
+    padding: 3px 5px;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+}
+
+.field {
+    width: 95%;
+    border: 1px solid #ffffff;
+}
+
+.field:focus {
+    border: 1px solid #ffffff;
+}
+
+#action {
+    margin-bottom: 20px;
+    margin-left: 0px; 
+    border: none;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 12px 20px;
+    width: 100%;
+}
+
+input[type=submit] {
+    -webkit-border-radius:2px;
+}
+
+#errors {
+    font-family: p1;
+    color: #e50000;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.choiceButton {
+    margin-bottom: 20px;
+    border: none;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 12pt;
+    padding: 30px 30px;
+    display:  block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    clear:  left;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    cursor: pointer;
+}
+
+.required {
+    font-family: p1;
+    font-size: 8pt;
+    color: #00cc00;
+    vertical-align:top;
+}
+
+#staySignedInText {
+    font-size: 10pt;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    float: right;
+}
+
+#rememberSignOn {
+    float: right;
+}
+
+#selectUser {
+    height: 180px;
+}
