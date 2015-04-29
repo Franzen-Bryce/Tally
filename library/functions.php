@@ -6,9 +6,9 @@
 
 function databaseConnection(){
         $server = 'localhost';
-        $username = 'franzeni_iClient';
-        $passwd = '11773218d21e7bf4c5e40f7ba1';
-        $database = 'franzeni_tally';
+        $username = '###########################';
+        $passwd = '###########################################';
+        $database = '#########';
         $dsn = "mysql:host=$server; dbname=$database";
 
         try{
